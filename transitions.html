@@ -33,7 +33,7 @@
     transform: rotate(<span style="color: #0000DD; font-weight: bold">10</span>deg);
 }
 </pre></div>
-</p>https://www.msn.com/fr-be/news/other/les-accidents-de-ski-se-multiplient-un-belge-grièvement-blessé-en-autriche/ar-AASXX80
+
 <h2>Les différentes transformations possible :</h2>
 <ul>
 	<LI>Rotation : rotate(10 deg)</LI>
@@ -50,6 +50,46 @@
 <ul>
 	<LI>Pour faire une figure en 3D : rotateX(45deg)</LI>
 </ul>
-<br>Pour qu'un objet HTML soit animé, il faut le doter de la propriété CSS <b>animation-name.<b></br>
+<br>Pour qu'un objet HTML soit animé, il faut le doter de la propriété CSS <b>animation-name.</b></br>
+<br><!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888">#objet{</span>
+   width:<span style="color: #0000DD; font-weight: bold">100</span>px;
+   height:<span style="color: #0000DD; font-weight: bold">100</span>px;
+   background<span style="color: #333333">-</span>color:<span style="color: #888888">#E80;</span>
+   animation<span style="color: #333333">-</span>name:monanimation;
+}
+</pre></div>
+</p>
+<br>Pour définir la séquence d'animation voulu, on aura recourt à une règle @ (dite règle at)</br>
+<br>Cette règle s'appelle <b>@keyframes</b> et c'est elle qui contiendra les styles:</br>
+<br><!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #333333">&lt;</span>style<span style="color: #333333">&gt;</span>
+   <span style="color: #888888">#objet{</span>
+      width:<span style="color: #0000DD; font-weight: bold">100</span>px;
+      height:<span style="color: #0000DD; font-weight: bold">100</span>px;
+      background<span style="color: #333333">-</span>color:<span style="color: #888888">#E80;</span>
+      animation<span style="color: #333333">-</span>name:monanimation;
+   }
+   <span style="color: #555555; font-weight: bold">@keyframes</span> monanimation{
+      <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">%</span>{
+         width:<span style="color: #0000DD; font-weight: bold">100</span>px;
+         height:<span style="color: #0000DD; font-weight: bold">100</span>px;
+         background<span style="color: #333333">-</span>color:<span style="color: #888888">#E80;</span>
+      }
+      <span style="color: #0000DD; font-weight: bold">50</span><span style="color: #333333">%</span>{
+         width:<span style="color: #0000DD; font-weight: bold">100</span>px;
+         height:<span style="color: #0000DD; font-weight: bold">100</span>px;
+         background<span style="color: #333333">-</span>color:<span style="color: #888888">#0A0;</span>
+         border<span style="color: #333333">-</span>radius:<span style="color: #0000DD; font-weight: bold">100</span>px;
+         transform:rotate(<span style="color: #0000DD; font-weight: bold">90</span>deg);
+      }
+      <span style="color: #0000DD; font-weight: bold">100</span><span style="color: #333333">%</span>{
+         width:<span style="color: #0000DD; font-weight: bold">100</span>px;
+         height:<span style="color: #0000DD; font-weight: bold">100</span>px;
+         background<span style="color: #333333">-</span>color:<span style="color: #888888">#E80;</span>
+         transform:rotate(<span style="color: #0000DD; font-weight: bold">180</span>deg);
+      }
+   }
+<span style="color: #333333">&lt;/</span>style<span style="color: #333333">&gt;</span>
+</pre></div>
+</br>
 </body>
 </html>
