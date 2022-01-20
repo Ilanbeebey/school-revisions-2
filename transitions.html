@@ -4,7 +4,7 @@
 	<title>Révisions 3 - Les animations & transitions</title>
 	<meta charset="utf-8">
 </head>
-<body>
+<body>s
     <!-- Modify background color -->
     <style>
         body {
@@ -137,8 +137,23 @@
 	<LI>Translation : <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"> translate(<span style="color: #0000DD; font-weight: bold">10</span>px, <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">3</span>em)
 </pre></div>
 </LI>
-</ul>
 <ul>
+<br>ease: le mouvement est rapide au début puis ralentit petit à petit jusqu'à l'arrêt complet.</br>
+<br>linear: le mouvement garde la même vitesse du début à la fin de la transition.</br>
+<br>ease-in: le mouvement commence lentement puis gagne en vitesse avec le temps.</br>
+<br>ease-out: le mouvement est rapide au début puis ralentit à la fin (le ralenti avec ease-out est moins senti qu'avec ease).</br>
+<br>ease-in-out: le mouvement commence lentement et fini lentement, mais il est plus rapide au milieu de la transition.</br>
+<br><!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888">#objet{</span>
+   width: <span style="color: #0000DD; font-weight: bold">100</span>px;
+   height: <span style="color: #0000DD; font-weight: bold">100</span>px;
+   background<span style="color: #333333">-</span>color: <span style="color: #888888">#E80;</span>
+   animation<span style="color: #333333">-</span>name: monanimation;
+   animation<span style="color: #333333">-</span>duration: <span style="color: #0000DD; font-weight: bold">1</span>s;
+   animation<span style="color: #333333">-</span>timing<span style="color: #333333">-</span>function: ease;
+}
+</pre></div>
+</br>
+</ul>
 	<LI>Inclinaison :<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">skewX(<span style="color: #0000DD; font-weight: bold">10</span>deg), skewY(<span style="color: #6600EE; font-weight: bold">2.1</span>rad)
 </pre></div>
 </LI>
@@ -148,3 +163,4 @@
 </pre></div>
 </LI>
 </ul>
+</body>
