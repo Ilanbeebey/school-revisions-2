@@ -5,3 +5,20 @@
 #box:hover {
   background-color: gold;
 }
+#box2 {
+  background-color: aquamarine;
+  transition: 1s;
+}
+
+#box2:hover {
+  background-color: gold;
+}
+.transclass{
+width:100px;
+background-color: yellow;
+}
+
+.transclass:hover{
+width:300px;
+transition:width 0.5s linear 0s;
+}
