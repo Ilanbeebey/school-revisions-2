@@ -1,0 +1,7 @@
+.box {
+  background-color: aquamarine;
+}
+
+.box:hover {
+  background-color: gold;
+}

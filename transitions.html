@@ -3,6 +3,7 @@
 <head>
 	<title>Révisions 3 - Les animations & transitions</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
     <!-- Modify background color -->
@@ -19,48 +20,7 @@
 <li>Une transition est une propriété qui change lors d'une action, un évenement</li>
 <br>Exemple:</br> 
 <br>Pour qu'un objet HTML soit animé, il faut le doter de la propriété CSS <b>animation-name.<b></br>
-<<<<<<< HEAD
-=======
-    <p>Pour que l'anmation ne soit pas animer, on met :<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">.piege {
-  transition: 3s;
-  margin: auto;
-}
-.piege:hover {
-  margin: 0 30%;
-}
-</pre></div>
-</p>
-<p>Pour que l'animation soit animée, on met:</p>
-<p>Pour faire une transformation, on met :<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #333333">.</span>tourne {
-    transform: rotate(<span style="color: #0000DD; font-weight: bold">10</span>deg);
-}
-</pre></div>
-<h2>Les différentes transformations possible :</h2>
-<ul>
-	<LI>Rotation : <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">rotate(<span style="color: #0000DD; font-weight: bold">30</span>deg)
-</pre></div>
-</LI>
-	<
-</ul>
-<ul>
-	<LI>Echelle : <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"> scale(<span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #6600EE; font-weight: bold">0.5</span>)
-</pre></div>
-</LI>
-</ul>
-<ul>
-	<LI>Translation : <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"> translate(<span style="color: #0000DD; font-weight: bold">10</span>px, <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">3</span>em)
-</pre></div>
-</LI>
-</ul>
-<ul>
-	<LI>Inclinaison :<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">skewX(<span style="color: #0000DD; font-weight: bold">10</span>deg), skewY(<span style="color: #6600EE; font-weight: bold">2.1</span>rad)
-</pre></div>
-</LI>
-</ul>
-<ul>
-	<LI>Pour faire une figure en 3D : rotateX(45deg)</LI>
-</ul>
->>>>>>> 9febe0ddb2b18ec9d7261311446dd4af778c0441
+   
 <br>Pour qu'un objet HTML soit animé, il faut le doter de la propriété CSS <b>animation-name.</b></br>
 <br><!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888">#objet{</span>
    width:<span style="color: #0000DD; font-weight: bold">100</span>px;
@@ -102,14 +62,9 @@
 <span style="color: #333333">&lt;/</span>style<span style="color: #333333">&gt;</span>
 </pre></div>
 </br>
-	<LI>Pour faire une figure en 3D :<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">rotateX(<span style="color: #0000DD; font-weight: bold">45</span>deg)
 </pre></div>
 </LI>
 </ul> 
-<<<<<<< HEAD
-
-=======
->>>>>>> 9febe0ddb2b18ec9d7261311446dd4af778c0441
 </body>
 </html> 
 
@@ -155,3 +110,31 @@
 </pre></div>
 </LI>
 </ul>
+<ul>
+	<LI>Pour faire une transformation sur une transformation, on met : <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">transition: transform <span style="color: #0000DD; font-weight: bold">1</span>s
+</pre></div>
+</LI>
+</ul>
+<ul>
+	<LI>Pour faire une transition et une ergonomie : <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #333333">.</span>conteneur <span style="color: #333333">.</span>bouge {
+    transition: <span style="color: #0000DD; font-weight: bold">1</span>s;
+}
+<span style="color: #333333">.</span>conteneur:hover <span style="color: #333333">.</span>bouge {
+    transform: translate(<span style="color: #0000DD; font-weight: bold">60</span>px);
+}
+</pre></div>
+</LI>
+</ul>
+<ul>
+	<a class="box">
+	<LI>Pour faire des transitions animées en CSS : <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #333333">.</span>box {
+  background<span style="color: #333333">-</span>color: aquamarine;
+}
+
+<span style="color: #333333">.</span>box:hover {
+  background<span style="color: #333333">-</span>color: gold;
+}
+</pre></div>
+</LI>
+</ul>
+</a>
